@@ -1,10 +1,9 @@
-package pagemanager;
+package utils;
 
 import org.openqa.selenium.WebDriver;
 import pages.CartPage;
 import pages.CheckoutPage;
 import pages.HomePage;
-import pages.LoginPage;
 import pages.SearchResultsPage;
 
 public class PageFactoryManager {
@@ -17,10 +16,6 @@ public class PageFactoryManager {
 
   public HomePage getHomePage() {
     return new HomePage(driver);
-  }
-
-  public LoginPage getSignInPage() {
-    return new LoginPage(driver);
   }
 
   public CartPage getCartPage() {
